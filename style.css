@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: -1;
+}
+
+#head{
+    font-family: 'Orbitron', sans-serif;
+    color: white ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 50;
+    letter-spacing: 25px;
+    padding-top: 25px;
+    text-shadow: 0 0 8px #0b6dc2;
+    color: #0b6dc2;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+    /* text-align: start; */
+    width: 600px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);     /* semi-transparent background */
+    backdrop-filter: blur(10px);              /* frosted glass blur */
+    -webkit-backdrop-filter: blur(10px);      /* Safari support */
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(11, 109, 194, 0.4); /* matches your blue! */
+    color: rgb(69 114 175);
+    font-size: 30px;
+}
+
+#input-box{
+    width: 450px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    background-color: #3e546f;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: large;
+    outline: none;
+    border: 1.5px solid rgb(42, 130, 171);
+    box-shadow: 0 0 25px rgba(5, 78, 151, 0.4); 
+}
+
+#enter_name{
+    letter-spacing: 2px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+#submit{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #3e546f;
+    font-size: large;
+    color: #5c7082;
+    font-weight: bold;
+}
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
+  75% { transform: rotate(2deg); }
+}
+
+button:hover {
+  animation: wiggle 0.3s ease-in-out;
+}
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#output{
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+
+/* Smartphones (Portrait) — up to 480px */
+@media (max-width: 504px)
+{
+    #head{
+        font-size: 15px;
+        letter-spacing: 7px;
+    }
+    .main-box{
+        width: 300px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 5px;
+    }
+    #input-box{
+        max-width: 60%;
+    }
+    #enter_name{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #output{
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+
+
+/* Tablets (Portrait) — 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px)
+{
+    #head{
+        font-size: 35px;
+        font-weight: 25;
+        letter-spacing: 15px;
+    }
+    
+}
+
+/* Large phones and landscape smartphones */
+@media (min-width: 505px) and (max-width: 767px) {
+    #head {
+        font-size: 25px;
+        letter-spacing: 12px;
+    }
+    .main-box{
+        width: 500px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
