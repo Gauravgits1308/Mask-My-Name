@@ -40,7 +40,6 @@ main{
     align-items: center;
     gap: 50px;
     flex-direction: column;
-    /* text-align: start; */
     width: 600px;
     height: 400px;
     background: rgba(255, 255, 255, 0.1);     /* semi-transparent background */
@@ -149,7 +148,7 @@ button:hover {
     
 }
 
-/* Large phones and landscape smartphones */
+ /* Large phones and landscape smartphones  */
 @media (min-width: 505px) and (max-width: 767px) {
     #head {
         font-size: 25px;
@@ -161,4 +160,5 @@ button:hover {
         margin-bottom: 30px;
     }
 }
+
 
